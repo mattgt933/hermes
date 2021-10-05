@@ -1,0 +1,89 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<style>
+    form {
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;        
+        position: fixed;
+          left: 0px;
+          right: 0px;
+          top: 200px;
+    }
+
+input {
+    font-size: 20px;
+padding: 20px;
+border: 2px solid #111;
+border-radius: 5px;
+background-color: rgba(51, 51, 51, 0.0);
+color: #fff;
+}
+input:hover {
+background-color: rgba(51, 51, 51, 0.4);
+}
+
+
+h1{
+    width: 10%;
+    color: #333;
+      font-size: 50px;
+    text-align: center;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    position: fixed;
+    left: 45%;
+}
+
+
+body {
+background-color: #333;
+}
+
+
+img {
+  opacity: 0.5;
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  filter:contrast(125%);
+}
+
+p {
+        text-align: center;
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;        
+        position: fixed;
+          left: 0px;
+          right: 0px;
+          top: 260px;
+}
+</style>
+</head>
+<body>
+    <img src="https://flhermes.files.wordpress.com/2021/09/cropped-af.jpg">
+<h1>Login</h1>
+<form id="your_form" onsubmit="yourFunction()">
+<input type="text" placeholder="First Part Of Email" name="keywords" required>
+<p>("example123" not "example123@example.com")</p>
+<input type="submit" value="Login">
+</form>
+
+<script>
+    
+function yourFunction(){
+    var action_src = "https://flhermes.wordpress.com/" + document.getElementsByName("keywords")[0].value;
+    var your_form = document.getElementById('your_form');
+    your_form.action = action_src ;
+}
+</script>
+</body>
+</html>
