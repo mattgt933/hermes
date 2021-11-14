@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    </head>
+
+    <body id="bodyOne">
+        <input type="color" id="Cin" onchange="colorF()"><br>
+        <!-- <button onclick="colorF()">Set Color</button> -->
+        <script>
+
+function colorF() {
+document.getElementById("bodyOne").style.backgroundColor = document.getElementById("Cin").value;
+}
+</script>
+    </body>
+</html>
