@@ -9,9 +9,10 @@ transform-origin: 30px 30px;
 </style>
 </head>
 <body>
-
+<label for="my-color">
 <svg height="400" width="450">
 <g id="colorPicker" onclick="clicked()">
+ <circle cx="30" cy="30" r="4" stroke="white" stroke-width="8" fill="none" />
  <line x1="30" y1="30" x2="29" y2="5" style="stroke:rgb(255,0,0);stroke-width:10" />
  <line x1="30" y1="30" x2="40" y2="7" style="stroke:rgb(255,125,0);stroke-width:10" />
  <line x1="30" y1="30" x2="50" y2="13" style="stroke:#ffcc00;stroke-width:10" />
@@ -32,12 +33,15 @@ transform-origin: 30px 30px;
  <circle cx="30" cy="30" r="25" stroke="white" stroke-width="5" fill="none" />
 
 </svg>
+<input type="color" id="my-color" style="opacity: 0; visibility: hidden; position: absolute;">
 
+</label>
 <script>
 
 function clicked() {
 
 $('#colorPicker').animate({rotate: "360deg"});
+$('#colorPicker').delay("fast").trigger('#my-color');
 };
 
 
