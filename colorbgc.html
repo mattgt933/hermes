@@ -28,7 +28,8 @@
 
     <body id="bodyOne">
         <input type="color" id="Cin" onchange="colorF()"><br>
-        <input type="text" id="Lin" onchange="linkC()">
+        <input type="text" id="Lin" onchange="linkC()"><br>
+        <input type="submit" value="Set Image">
         <img src="" id="Image">
         <script>
 
@@ -38,7 +39,7 @@ document.getElementById("Cin").style.backgroundColor = document.getElementById("
 }
    
  function linkC() {
-document.getElementById("Image").setAttribute("class", document.getElementById("Lin").value);
+document.getElementById("Image").setAttribute("src", document.getElementById("Lin").value);
 
 
 }   
