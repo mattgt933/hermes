@@ -28,12 +28,22 @@
 
     <body id="bodyOne">
         <input type="color" id="Cin" onchange="colorF()"><br>
+        <input type="text" id="Lin" onchange="linkC()">
+        <img src="" id="Image">
         <script>
 
 function colorF() {
 document.getElementById("bodyOne").style.backgroundColor = document.getElementById("Cin").value;
 document.getElementById("Cin").style.backgroundColor = document.getElementById("Cin").value;
 }
+   
+ function linkC() {
+document.getElementById("Image").setAttribute("class", document.getElementById("Lin").value);
+
+
+}   
+            
+            
 </script>
     </body>
 </html>
